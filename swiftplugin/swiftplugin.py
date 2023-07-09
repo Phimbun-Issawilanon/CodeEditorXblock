@@ -159,7 +159,7 @@ class SwiftPluginXBlock(
             'has_solution_defined': not self.is_blank(solution_code),
             'problem_solution': solution_code,
             'show_run_button': True,
-            'show_submit_button': True,
+            'show_submit_button': False,
             'display_language': assignment_code['displayName'],
             'allowed_languages': self.get_allowed_languages(response['assignmentCodes']),
             'starter_code': starter_code,
