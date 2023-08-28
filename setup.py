@@ -28,7 +28,7 @@ setup(
     description='swiftplugin XBlock',   # TODO: write a better description.
     license='AGPL v3',
     packages=[
-        'swiftplugin',
+        'codeeditor',
     ],
     install_requires=[
         'XBlock',
@@ -36,8 +36,8 @@ setup(
     ],
     entry_points={
         'xblock.v1': [
-            'swiftplugin = swiftplugin:SwiftPluginXBlock',
+            'codeeditor = codeeditor:SwiftPluginXBlock',
         ]
     },
-    package_data=package_data("swiftplugin", ["static", "public"]),
+    package_data=package_data("codeeditor", ["static", "public"]),
 )
